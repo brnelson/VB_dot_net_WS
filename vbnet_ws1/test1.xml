@@ -1,0 +1,30 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:mer="http://www.mercurypay.com">
+<soapenv:Header/>
+<soapenv:Body>
+<mer:CreditTransaction>
+<mer:tran xmlns="http://www.mercurypay.com">
+<![CDATA[<TStream> 
+<Transaction> 
+<MerchantID>019588466313922</MerchantID> 
+<TranType>Credit</TranType> 
+<TranCode>Sale</TranCode> 
+<InvoiceNo>21</InvoiceNo> 
+<RefNo>21</RefNo> 
+<Memo>Brian VB.NET WS Project</Memo> 
+<Frequency>OneTime</Frequency> 
+<RecordNo>RecordNumberRequested</RecordNo> 
+<PartialAuth>Allow</PartialAuth> 
+<Account><EncryptedFormat>MagneSafe</EncryptedFormat> 
+<AccountSource>Swiped</AccountSource> 
+<EncryptedBlock>2F8248964608156B2B1745287B44CA90A349905F905514ABE3979D7957F13804705684B1C9D5641C</EncryptedBlock> 
+<EncryptedKey>9500030000040C200026</EncryptedKey> 
+</Account> 
+<Amount> 
+<Purchase>10.00</Purchase> 
+</Amount> </Transaction> 
+</TStream>]]>
+</mer:tran>
+<mer:pw>xyz</mer:pw>
+</mer:CreditTransaction>
+</soapenv:Body>
+</soapenv:Envelope>
